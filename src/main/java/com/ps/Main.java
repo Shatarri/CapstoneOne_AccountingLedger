@@ -49,17 +49,17 @@ public class Main {
     //  adding a deposit
     public static void addDeposit() {
         // Prompting the user for deposit information
-        System.out.println("Add deposit functionality goes here.");
+        System.out.println("command for adding deposit goes here");
     }
 
     //  making a payment (debit)
     public static void makePayment() {
-        System.out.println("Make payment functionality goes here.");
+        System.out.println("command for making payment goes here");
     }
 
     //  viewing the ledger
     public static void viewLedger() {
         // Display ledger options (All transactions, deposits, payments)
-        System.out.println("Ledger display functionality goes here.");
+        System.out.println("command for displaying ledger goes here.");
     }
 }
