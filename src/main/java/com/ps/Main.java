@@ -143,12 +143,12 @@ public class Main {
         } while (ledgerChoice != 0);
     }
 
-}
 
 private static void displayPayments() {
     System.out.println("Payments:");
     for (Transaction transaction : transactions) {
         if (transaction.getAmount() < 0) System.out.println(transaction);
+    }
     }
 
     private static void displayDeposits () {
@@ -215,13 +215,13 @@ private static void displayPayments() {
         System.out.println("Date | Time | Description | Vendor | Amount");
         System.out.println("-------------------------------------------");
 
-        for (Transaction transaction : transactions) {
-            // Check if the transaction date is within the current month
-            if (!transaction.getDate().isBefore(firstDayOfMonth) && !transaction.getDate().isAfter(currentDate)) {
-                System.out.println(transaction);
-            }
-        }
-        System.out.println("-------------------------------------------");
+//        for (Transaction transaction : transactions) {
+//            // Check if the transaction date is within the current month
+//            if (!transaction.getDate().isBefore(firstDayOfMonth) && !transaction.getDate().isAfter(currentDate)) {
+//                System.out.println(transaction);
+//            }
+//        }
+//        System.out.println("-------------------------------------------");
 
     }
 
@@ -234,13 +234,13 @@ private static void displayPayments() {
         System.out.println("Date | Time | Description | Vendor | Amount");
         System.out.println("-------------------------------------------");
 
-        for (Transaction transaction : transactions) {
-            // Check if the transaction date is within the previous month
-            if (!transaction.getDate().isBefore(firstDayOfPreviousMonth) && !transaction.getDate().isAfter(lastDayOfPreviousMonth)) {
-                System.out.println(transaction);
-            }
-        }
-        System.out.println("-------------------------------------------");
+//        for (Transaction transaction : transactions) {
+//            // Check if the transaction date is within the previous month
+//            if (!transaction.getDate().isBefore(firstDayOfPreviousMonth) && !transaction.getDate().isAfter(lastDayOfPreviousMonth)) {
+//                System.out.println(transaction);
+//            }
+//        }
+//        System.out.println("-------------------------------------------");
 
 
     }
@@ -253,13 +253,13 @@ private static void displayPayments() {
         System.out.println("Date | Time | Description | Vendor | Amount");
         System.out.println("-------------------------------------------");
 
-        for (Transaction transaction : transactions) {
-            // Check if the transaction date is within the current year
-            if (!transaction.getDate().isBefore(firstDayOfYear) && !transaction.getDate().isAfter(currentDate)) {
-                System.out.println(transaction);
-            }
-        }
-        System.out.println("-------------------------------------------")
+//        for (Transaction transaction : transactions) {
+//            // Check if the transaction date is within the current year
+//            if (!transaction.getDate().isBefore(firstDayOfYear) && !transaction.getDate().isAfter(currentDate)) {
+//                System.out.println(transaction);
+//            }
+//        }
+//        System.out.println("-------------------------------------------");
 
     }
 
@@ -272,13 +272,13 @@ private static void displayPayments() {
         System.out.println("Date | Time | Description | Vendor | Amount");
         System.out.println("-------------------------------------------");
 
-        for (Transaction transaction : transactions) {
-            // Check if the transaction date is within the previous year
-            if (!transaction.getDate().isBefore(firstDayOfPreviousYear) && !transaction.getDate().isAfter(lastDayOfPreviousYear)) {
-                System.out.println(transaction);
-            }
-        }
-        System.out.println("-------------------------------------------");
+//        for (Transaction transaction : transactions) {
+//            // Check if the transaction date is within the previous year
+//            if (!transaction.getDate().isBefore(firstDayOfPreviousYear) && !transaction.getDate().isAfter(lastDayOfPreviousYear)) {
+//                System.out.println(transaction);
+//            }
+//        }
+//        System.out.println("-------------------------------------------");
 
     }
 
