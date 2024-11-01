@@ -1,5 +1,8 @@
 package com.ps;
 
+import java.time.LocalDate;
+import java.time.LocalTime;
+
 public class Transaction {
     private String date;
     private String time;
@@ -14,6 +17,9 @@ public class Transaction {
         this.description = description;
         this.vendor = vendor;
         this.amount = amount;
+    }
+
+    public Transaction(LocalDate currentDate, LocalTime currentTime, String description, String vendor, double amount) {
     }
     //Getter and Setters
 
